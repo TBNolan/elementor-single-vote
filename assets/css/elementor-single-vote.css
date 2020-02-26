@@ -1,0 +1,118 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+.single .type-movies .title h2 {
+    font-family: "Roboto", Sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.single .type-movies .user-rating-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.single .type-movies .title h2 {
+    font-family: "Roboto", Sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*seen button*/
+.single .type-movies .user-rating-widget .user-rating-widget button.movie-seen-toggle {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    color: rgba(256, 256, 256, 0.5);
+}
+.single .type-movies .user-rating-widget button.movie-seen-toggle:hover {
+    background-color: rgba(0,0,0,1);
+    border: 1px solid black;
+    color: rgba(256, 256, 256, 1);
+}
+
+/*seen sash ribbon*/
+.single .type-movies .user-rating-widget .elementor-post__thumbnail__link .seen-ribbon {
+    display: none;
+}
+
+.single .type-movies .user-rating-widget article.seen .elementor-post__thumbnail__link .seen-ribbon {
+   display: block;
+   -webkit-transform: rotate(45deg); 
+      -moz-transform: rotate(45deg); 
+       -ms-transform: rotate(45deg); 
+        -o-transform: rotate(45deg); 
+           transform: rotate(45deg); 
+   position: absolute;
+   width: 220px;
+   height: 25px;
+   color: white;
+   font-family: sans-serif;
+   size: 14px;
+   background-color: gray;
+   top: 5%;
+   left: 25%;
+}
+.single .type-movies .user-rating-widget article.seen .elementor-post__thumbnail__link .seen-ribbon .seen-text {
+    position: absolute;
+    left: 50%;
+}
+
+/* star ratings */
+.single .type-movies .user-rating-widget article:not(.seen) .star-rating {
+    display: none;
+}
+.single .type-movies .user-rating-widget .rate {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+  
+.single .type-movies .user-rating-widget input {
+    display: none;
+}
+  
+.single .type-movies .user-rating-widget label {
+    float: right;
+    font-size: 0;
+    color: #d9d9d9;
+}
+.single .type-movies .user-rating-widget .star-rating .rate label {
+    display: block;
+}
+  
+.single .type-movies .user-rating-widget label:before {
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 35px;
+}
+  
+.single .type-movies .user-rating-widget label:hover,
+.single .type-movies .user-rating-widget label:hover ~ label {
+    color: #fcd000;
+    transition: 0.2s;
+}
+  
+.single .type-movies .user-rating-widget input:checked ~ label {
+    color: #ccac00;
+}
+  
+.single .type-movies .user-rating-widget input:checked ~ label:hover,
+.single .type-movies .user-rating-widget input:checked ~ label:hover ~ label {
+    color: #fcd000;
+    transition: 0.2s;
+}
+  
+  
+/* Half-star*/
+  
+.single .type-movies .user-rating-widget .star-half {
+    position: relative;
+}
+  
+.single .type-movies .user-rating-widget .star-half:before {
+    position: absolute;
+    content: "\f089";
+    padding-right: 0;
+}
